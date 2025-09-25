@@ -21,7 +21,7 @@ func SetupRouter() *gin.Engine {
 		// 文章相关（无需认证）
 		public.GET("/posts", handlers.GetPosts)
 		public.GET("/posts/:id", handlers.GetPost)
-		public.GET("/posts/:postId/comments", handlers.GetComments)
+		public.GET("/posts/:id/comments", handlers.GetComments)
 	}
 
 	// 需要认证的路由
@@ -34,7 +34,7 @@ func SetupRouter() *gin.Engine {
 		protected.DELETE("/posts/:id", handlers.DeletePost)
 
 		// 评论管理
-		protected.POST("/posts/:postId/comments", handlers.CreateComment)
+		protected.POST("/posts/:id/comments", handlers.CreateComment)
 	}
 
 	return router

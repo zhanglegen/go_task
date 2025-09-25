@@ -15,7 +15,7 @@ var DB *gorm.DB
 type User struct {
 	ID        uint           `gorm:"primaryKey" json:"id"`
 	Username  string         `gorm:"size:50;not null;unique" json:"username"` // 用户名，唯一
-	Password  string         `gorm:"size:100;not null" json:"-"`              // 密码，不在JSON中显示
+	Password  string         `gorm:"size:100;not null" json:"password"`      // 密码
 	Email     string         `gorm:"size:100;not null;unique" json:"email"`   // 邮箱，唯一
 	CreatedAt time.Time      `json:"created_at"`
 	UpdatedAt time.Time      `json:"updated_at"`

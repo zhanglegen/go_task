@@ -16,7 +16,7 @@ func CreateComment(c *gin.Context) {
 		return
 	}
 
-	postID, err := strconv.ParseUint(c.Param("postId"), 10, 32)
+	postID, err := strconv.ParseUint(c.Param("id"), 10, 32)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid post ID"})
 		return
@@ -51,7 +51,7 @@ func CreateComment(c *gin.Context) {
 
 // GetComments 获取文章的所有评论
 func GetComments(c *gin.Context) {
-	postID, err := strconv.ParseUint(c.Param("postId"), 10, 32)
+	postID, err := strconv.ParseUint(c.Param("id"), 10, 32)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid post ID"})
 		return

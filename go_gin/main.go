@@ -1,14 +1,25 @@
 package main
 
 import (
+	//_ "github.com/gin-gonic/gin
 	"log"
 
 	"github.com/zhanglegen/go_task/go_gin/model"
+	_ "github.com/zhanglegen/go_task/go_gin/model"
 	"github.com/zhanglegen/go_task/go_gin/routes"
 	"github.com/zhanglegen/go_task/go_gin/utils"
 )
 
 func main() {
+	// router := gin.Default()
+	// router.GET("/ping", func(c *gin.Context) {
+	// 	c.JSON(200, gin.H{
+	// 		"message": "pong",
+	// 	})
+	// })
+	// router.Run() // 默认监听 0.0.0.0:8080
+	//model.InitDb()
+
 	// 初始化日志
 	if err := utils.InitLogger(); err != nil {
 		log.Fatalf("Failed to initialize logger: %v", err)
