@@ -1,4 +1,4 @@
-package main
+package main1
 
 import (
 	mygorm "github.com/zhanglegen/go_task/gorm"
