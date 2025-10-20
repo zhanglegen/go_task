@@ -1,0 +1,25 @@
+{
+  "name": "nft-auction-marketplace",
+  "version": "1.0.0",
+  "description": "NFT Auction Marketplace with Chainlink integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "coverage": "npx hardhat coverage"
+  },
+  "keywords": ["NFT", "auction", "blockchain", "solidity"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "hardhat-deploy": "^0.11.45"
+  }
+}
