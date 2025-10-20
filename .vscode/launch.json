@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",  // 调试模式：auto（自动）、debug（调试当前包）、test（测试）等
-            "program": "${workspaceFolder}/go_gin"  // 调试入口：当前文件所在目录
+            "program": "${workspaceFolder}/Dapp"  // 调试入口：当前文件所在目录
         }
 
     ]
