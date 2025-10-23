@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	// 替换为你的Infura API Key
+	// 替换为你的Infura API Key111
 	infuraAPIKey := "YOUR_INFURA_API_KEY"
 	client, err := ethclient.Dial("https://sepolia.infura.io/v3/" + infuraAPIKey)
 	if err != nil {

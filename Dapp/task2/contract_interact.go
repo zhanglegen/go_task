@@ -79,7 +79,7 @@ func main() {
 	fmt.Printf("Increment交易已发送，哈希: %s\n", tx.Hash().Hex())
 	fmt.Printf("可在 https://sepolia.etherscan.io/tx/%s 查看状态\n", tx.Hash().Hex())
 
-	// 6. 等待交易确认后，再次查询计数
+	// 6. 等待交易确认后，再次查询计数11
 	// （实际场景中需轮询等待确认，这里简化为手动等待后重新运行）
 	fmt.Println("等待交易确认...（约10-30秒）")
 	fmt.Println("确认后再次查询计数...")

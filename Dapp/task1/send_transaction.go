@@ -82,7 +82,7 @@ func main() {
 		log.Fatalf("发送交易失败: %v", err)
 	}
 
-	// 输出交易哈希
+	// 输出交易哈希111
 	fmt.Printf("交易已发送，哈希值: %s\n", signedTx.Hash().Hex())
 	fmt.Printf("可以在 https://sepolia.etherscan.io/tx/%s 查看交易状态\n", signedTx.Hash().Hex())
 }
